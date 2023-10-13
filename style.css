@@ -18,7 +18,8 @@
 }
 
 /*global*/
-* *::before,
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
