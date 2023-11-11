@@ -2,7 +2,7 @@
   --font-family-anton: "Anton", sans-serif;
   --font-family-noto-sans-jp: "Noto Sans JP", sans-serif;
 
-  --color-white: #ffffefc;
+  --color-white: #fffefc;
   --color-black: #020911;
   --color-accent-red: #f20574;
   --color-accent-yellow: #f2e52e;
@@ -72,7 +72,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 94px 40px;
+  padding: 96px 40px;
   position: relative;
   margin-top: 80px;
 }
@@ -131,4 +131,74 @@ img {
   .hero-texts {
     gap: 20px;
   }
+}
+
+.about {
+  width: 100%;
+  background-color: var(--color-background-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-container {
+  width: 880px;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: var(--color-white);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.about-title {
+  font-family: var(--font-family-anton);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  width: auto 309px;
+  height: auto 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.about-title-Ground {
+  color: var(--color-accent-red);
+}
+
+.about-title-Players {
+  color: var(--color-accent-yellow);
+}
+
+.about-mini-container {
+  width: 800px;
+  height: auto 180px;
+  display: flex;
+
+  flex-direction: row;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+.about-image {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
 }
