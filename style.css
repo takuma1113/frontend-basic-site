@@ -33,6 +33,14 @@ img {
   display: block;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /*header*/
 .header {
   height: 80px;
@@ -145,8 +153,8 @@ img {
 }
 
 .about-container {
-  width: 880px;
-  height: 268px;
+  max-width: 880px;
+  /* height: 268px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,11 +172,11 @@ img {
   font-style: normal;
   font-weight: 400;
   margin: 0;
-  width: auto 309px;
-  height: auto 48px;
-  display: flex;
+  /* width: auto 309px;
+  height: auto 48px; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .about-title-Ground {
@@ -180,8 +188,6 @@ img {
 }
 
 .about-mini-container {
-  width: 800px;
-  height: auto 180px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -190,22 +196,49 @@ img {
 }
 
 .about-text {
-  width: 100%;
-  height: 154px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  /* width: 460px;
+  height: 168px; */
   font-size: 16px;
   margin: 0;
 }
 
+/* span {
+  display: inline-block;
+} */
+
 .about-image {
   width: 320px;
   height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: fill;
+}
+
+@media (max-width: 750px) {
+  /* .about {
+    width: auto;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .about-container {
+    width: auto;
+    height: auto;
+  } */
+
+  .about-title {
+    /* width: auto 221px;
+    height: auto 36px; */
+    font-size: 24px;
+  }
+
+  /* .about-text {
+    max-width: 350px;
+    height: auto;
+  } */
+
+  .about-image {
+    display: none;
+  }
 }
 
 .courses {
