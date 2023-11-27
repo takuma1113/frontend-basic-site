@@ -41,6 +41,10 @@ p {
   margin-inline-end: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*header*/
 .header {
   height: 80px;
@@ -173,11 +177,11 @@ p {
   margin: 0;
 }
 
-.about-title-Ground {
+.about-title-grand {
   color: var(--color-accent-red);
 }
 
-.about-title-Players {
+.about-title-players {
   color: var(--color-accent-yellow);
 }
 
@@ -293,12 +297,7 @@ p {
   z-index: 1;
 }
 
-a {
-  text-decoration: none;
-}
-
 .course-block-body {
-  /* max-width: 550px; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
