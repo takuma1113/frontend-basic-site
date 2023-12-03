@@ -29,6 +29,10 @@ body {
   font-family: var(--font-family-noto-sans-jp);
 }
 
+p {
+  margin: 0;
+}
+
 img {
   display: block;
 }
@@ -412,5 +416,175 @@ a {
 
   .course-all-course-text {
     font-size: 14px;
+  }
+}
+
+/* signup */
+.signup {
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+  background-color: var(--color-accent-yellow);
+}
+
+.signup-container {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 880px;
+}
+
+.signup-title {
+  font-family: var(--font-family-anton);
+  font-size: 32px;
+  letter-spacing: 0.64px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.signup-text {
+  margin: 0;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.signup-label {
+  font-size: 20px;
+}
+
+.signup-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-accent-red);
+  background-color: var(--color-form-background-yellow);
+  font-size: 16px;
+}
+
+#eager {
+  height: 150px;
+}
+
+.signup-send {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 800px;
+  align-self: stretch;
+  padding: 10px 40px;
+  gap: 10px;
+  background-color: var(--color-accent-red);
+  box-shadow: 4px 4px 0px 0px var(--color-black);
+  transition: 0.3s;
+}
+
+.signup-send-form {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.signup-send-form-text {
+  font-size: 20px;
+  margin: 0;
+}
+
+.signup-send-form-right {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.signup-textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-accent-red);
+  background-color: var(--color-form-background-yellow);
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.signup-send:hover {
+  background-color: var(--color-button-hover-red);
+  box-shadow: 12px 12px 2px 0px var(--color-black);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  padding: 60px 0px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--color-background-black);
+}
+
+.footer-text {
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 750px) {
+  .signup {
+    padding: 40px 20px;
+  }
+
+  .signup-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .signup-form {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .signup-label {
+    font-size: 16px;
+  }
+
+  .signup-input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .signup-textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #eager {
+    height: 80px;
+  }
+
+  .signup-send {
+    padding: 10px 20px;
+    height: 40px;
+  }
+
+  .signup-send-form-text {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-text {
+    font-size: 12px;
   }
 }
